@@ -1,0 +1,90 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (7.0.3.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+    async (1.30.3)
+      console (~> 1.10)
+      nio4r (~> 2.3)
+      timers (~> 4.1)
+    async-http (0.56.6)
+      async (>= 1.25)
+      async-io (>= 1.28)
+      async-pool (>= 0.2)
+      protocol-http (~> 0.22.0)
+      protocol-http1 (~> 0.14.0)
+      protocol-http2 (~> 0.14.0)
+      traces (~> 0.4.0)
+    async-io (1.33.0)
+      async
+    async-pool (0.3.10)
+      async (>= 1.25)
+    async-websocket (0.19.0)
+      async-http (~> 0.54)
+      async-io (~> 1.23)
+      protocol-websocket (~> 0.7.0)
+    concurrent-ruby (1.1.10)
+    console (1.15.3)
+      fiber-local
+    faraday (2.4.0)
+      faraday-net_http (~> 2.0)
+      ruby2_keywords (>= 0.0.4)
+    faraday-mashify (0.1.0)
+      faraday (~> 2.0)
+      hashie
+    faraday-multipart (1.0.4)
+      multipart-post (~> 2)
+    faraday-net_http (2.1.0)
+    fiber-local (1.0.0)
+    gli (2.21.0)
+    hashie (5.0.0)
+    i18n (1.12.0)
+      concurrent-ruby (~> 1.0)
+    minitest (5.16.2)
+    multipart-post (2.2.3)
+    nio4r (2.5.8)
+    protocol-hpack (1.4.2)
+    protocol-http (0.22.6)
+    protocol-http1 (0.14.4)
+      protocol-http (~> 0.22)
+    protocol-http2 (0.14.2)
+      protocol-hpack (~> 1.4)
+      protocol-http (~> 0.18)
+    protocol-websocket (0.7.5)
+      protocol-http (~> 0.2)
+      protocol-http1 (~> 0.2)
+    ruby2_keywords (0.0.5)
+    slack-ruby-bot (0.16.1)
+      activesupport
+      hashie
+      slack-ruby-client (>= 0.14.0)
+    slack-ruby-client (1.1.0)
+      faraday (>= 2.0)
+      faraday-mashify
+      faraday-multipart
+      gli
+      hashie
+      websocket-driver
+    timers (4.3.3)
+    traces (0.4.1)
+    tzinfo (2.0.5)
+      concurrent-ruby (~> 1.0)
+    websocket-driver (0.7.5)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  async-websocket
+  slack-ruby-bot
+
+RUBY VERSION
+   ruby 2.7.2p137
+
+BUNDLED WITH
+   2.1.4
